@@ -5,7 +5,7 @@ from flask import Flask, render_template, url_for
 import matplotlib
 matplotlib.use("Agg")
 """
-app = Flask(__name__, static_folder="templates")
+app = Flask(__name__, static_folder="static", template_folder="templates")
 
 
 @app.route("/")
