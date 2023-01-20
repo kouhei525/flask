@@ -27,13 +27,8 @@ def fake():
 def showpicture():
     return render_template("show_picture.html")
 
-@app.get("/hi/<name>")
-def hello(name):
-    return  f"HELLO,{name}!"
 
-@app.route("/boottest")
-def boottest():
-    return render_template("boot.html")
+
 
 """
 @app.route('/take-photo')
