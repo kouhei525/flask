@@ -128,13 +128,13 @@ def main():
 
     fake_B = 0.5*(netG_A2B(real_A).data + 1.0)
 
-    save_image(fake_B, "fake_B.png")
+    save_image(fake_B, "static/fake_B.png")
     #img = np.array(fake_B.detach().numpy())
     #print(np.array(fake_B.detach().numpy()))
     #print(img.shape)
-    img = plt.imread("fake_B.png")
-    plt.imshow(img)
-    plt.show()
+    #img = plt.imread("static/fake_B.png")
+    #plt.imshow(img)
+    #plt.show()
 
 if __name__ == "__main__":
     main()

@@ -21,6 +21,7 @@ def camtest():
 @app.route("/fakeimage")
 def fake():
     fakeGen.main()
+    return render_template("show_fake.html")
 
 @app.route("/showpicture")
 def showpicture():
