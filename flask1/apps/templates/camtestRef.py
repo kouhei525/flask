@@ -14,7 +14,7 @@ def main():
         cv2.imshow('camera', frame)
         key = cv2.waitKey(1) & 0xFF
         if key == ord('c'):
-            cv2.imwrite("./templates/camera_capture.jpg", frame)
+            cv2.imwrite("static/camera_capture.jpg", frame)
         #key1 =cv2.waitKey(1)& 0xFF
         elif key == ord('q'):
             break

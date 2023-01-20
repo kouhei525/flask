@@ -1,6 +1,7 @@
 import cv2
 from templates import camtestRef
 from flask import Flask, render_template, url_for
+import fakeGen
 """
 import matplotlib
 matplotlib.use("Agg")
@@ -16,6 +17,10 @@ def hell():
 def camtest():
     camtestRef.main()
     return render_template("takephoto.html")
+
+@app.route("/fakeimage")
+def fake():
+    fakeGen.main()
 
 @app.route("/showpicture")
 def showpicture():
