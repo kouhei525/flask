@@ -11,8 +11,10 @@
 
 <body>
   <div class="yourpic">
-   <img src="static/camera_capture.jpg" width="600px">
-   <a href="{{url_for('fake')}}">私があなたを描きます。</a>
+   <img src="static/camera_capture.jpg" 
+   alt 
+   onerror="this.onerror = null; this.src='';">
+   <a href="{{url_for('fake')}}">I will draw you!</a>
   </div>
 </body>
 

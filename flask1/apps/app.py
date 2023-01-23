@@ -1,6 +1,6 @@
 import cv2
-from templates import camtestRef
 from flask import Flask, render_template, url_for
+import camtestRef
 import fakeGen
 """
 import matplotlib
